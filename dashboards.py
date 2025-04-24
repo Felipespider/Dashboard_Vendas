@@ -4,6 +4,8 @@ import plotly.express as px
 
 st.set_page_config(layout="wide")
 
+st.title("Dashboard de Vendas📊") #título do dashboard
+
 
 df = pd.read_csv("supermarket_sales.csv", sep=";", decimal=",")
 df["Date"] = pd.to_datetime(df["Date"])
